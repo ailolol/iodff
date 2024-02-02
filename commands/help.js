@@ -42,7 +42,7 @@ module.exports = {
            { name: '🎵 Now Playing', value: 'Display the currently playing song information' },
           { name: '🔊 Volume', value: 'Adjust the music volume [ hearing at high volumes is risky ]' },
         ) 
-       .setImage('https://tenor.com/view/dancing-cat-kucing-abang-jago-radlcies-gif-24121867')
+       .setImage('https://cdn.discordapp.com/attachments/960166197851226183/1202904007186579486/pVQyq2j.png?ex=65cf26a8&is=65bcb1a8&hm=dfb00e9f584c7eb6c5740a7ba4188d43081873230643a3af337039e7a74f8126&')
 
       interaction.reply({
         embeds: [musicCommandsEmbed, basicCommandsEmbed],
