@@ -1,9 +1,7 @@
-
 const { ApplicationCommandOptionType } = require('discord.js');
 const db = require("../mongoDB");
 
-const { EmbedBuilder, ActionRowBuilder, ButtonBuilder } = require('discord.js');
-const { ButtonStyle } = require('discord.js');
+const { EmbedBuilder } = require('discord.js');
 
 module.exports = {
   name: "help",
@@ -35,18 +33,17 @@ module.exports = {
         .setColor(client.config.embedColor)
         .setTitle('✨ **Basic Commands**')
         .addFields(
-          { name: '🏓 Ping', value: "Check the bot's latency" },
+           { name: '🏓 Ping', value: "Check the bot's latency" },
           { name: '🗑️ Clear', value: 'Clear the song queue of this server' },
           { name: '⏱️ Time', value: 'Display the current song playback time' },
           { name: '🎧 Filter', value: 'Apply filters to enhance the sound as you love' },
            { name: '🎵 Now Playing', value: 'Display the currently playing song information' },
           { name: '🔊 Volume', value: 'Adjust the music volume [ hearing at high volumes is risky ]' },
-        ) 
-       .setImage('https://cdn.discordapp.com/attachments/960166197851226183/1202904007186579486/pVQyq2j.png?ex=65cf26a8&is=65bcb1a8&hm=dfb00e9f584c7eb6c5740a7ba4188d43081873230643a3af337039e7a74f8126&')
+        )
+       .setImage('https://cdn.discordapp.com/attachments/1150827819547504741/1168917372267151370/standard.gif?ex=65538222&is=65410d22&hm=b4994392f44679da41fc9304eb69deaa3769e136057556deec0db69ae8d33a97&')
 
       interaction.reply({
-        embeds: [musicCommandsEmbed, basicCommandsEmbed],
-        components: [row]
+        embeds: [musicCommandsEmbed, basicCommandsEmbed]
       }).catch(e => {});
     } catch (e) {
       console.error(e);
