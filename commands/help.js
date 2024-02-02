@@ -40,7 +40,7 @@ module.exports = {
            { name: '🎵 Now Playing', value: 'Display the currently playing song information' },
           { name: '🔊 Volume', value: 'Adjust the music volume [ hearing at high volumes is risky ]' },
         )
-       .setImage('https://cdn.discordapp.com/attachments/1150827819547504741/1168917372267151370/standard.gif?ex=65538222&is=65410d22&hm=b4994392f44679da41fc9304eb69deaa3769e136057556deec0db69ae8d33a97&')
+       .setImage('https://cdn.discordapp.com/attachments/960166197851226183/1202909261579943946/JLlVVlO.gif?ex=65cf2b8c&is=65bcb68c&hm=f21be175fd62ab98519343e09c1f7cafa3c0b2b3474544884e68c84a60f4300e&')
 
       interaction.reply({
         embeds: [musicCommandsEmbed, basicCommandsEmbed]
